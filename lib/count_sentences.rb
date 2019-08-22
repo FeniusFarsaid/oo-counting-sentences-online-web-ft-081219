@@ -3,7 +3,7 @@ require 'pry'
 class String
 
   def sentence?
-    self.end_with?(".")
+    if self.end_with?(".")
   end
 
   def question?
@@ -18,3 +18,4 @@ class String
       self.split(/[".?!"]/).reject{|string| string.empty?}.size
   end
 end
+
